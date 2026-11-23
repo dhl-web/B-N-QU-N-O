@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROSPORT - Trang Phục & Phụ Kiện Thể Thao Đỉnh Cao</title>
+  <meta name="description" content="Hệ thống bán lẻ quần áo, trang phục và phụ kiện thể thao chính hãng cao cấp: Bóng đá, Chạy bộ, Gym, Tennis, Yoga. Đổi trả 30 ngày, giao hàng hỏa tốc.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300E676'><path d='M13 10V3L4 14h7v7l9-11h-7z'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div>
+        <span>🔥 FLASH SALE MÙA HÈ: GIẢM ĐẾN 50% TẤT CẢ SẢN PHẨM | MIỄN PHÍ SHIP TỪ 499K</span>
+        <span class="top-bar-highlight">MÃ: SPORT2026</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="#size-calculator" class="top-bar-link">
+          <i class="fa-solid fa-ruler"></i> Bảng đo size
+        </a>
+        <a href="#showroom" class="top-bar-link">
+          <i class="fa-solid fa-location-dot"></i> Hệ thống 12 Showroom
+        </a>
+        <a href="tel:18006868" class="top-bar-link">
+          <i class="fa-solid fa-phone"></i> Hotline: 1800 6868
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navbar -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <span class="logo-text">PROSPORT</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Trang Chủ</a></li>
+          <li><a href="#shop" class="nav-link" onclick="App.setCategory('football')">Bóng Đá</a></li>
+          <li><a href="#shop" class="nav-link" onclick="App.setCategory('running')">Chạy Bộ</a></li>
+          <li><a href="#shop" class="nav-link" onclick="App.setCategory('gym')">Gym & Fitness</a></li>
+          <li><a href="#shop" class="nav-link" onclick="App.setCategory('yoga')">Nữ & Yoga</a></li>
+          <li><a href="#shop" class="nav-link" onclick="App.setCategory('accessories')">Phụ Kiện</a></li>
+          <li><a href="#flash-sale" class="nav-link"><span class="nav-tag-hot">HOT SALE</span></a></li>
+        </ul>
+
+        <!-- Real-time Search Bar -->
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search-input" placeholder="Tìm áo bóng đá, quần gym, đồ chạy bộ..." aria-label="Tìm kiếm sản phẩm">
+        </div>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Theme Toggle -->
+          <button class="action-btn theme-toggle-btn" title="Chuyển chế độ Sáng / Tối" aria-label="Chuyển theme">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+
+          <!-- Wishlist Toggle -->
+          <button class="action-btn wishlist-toggle-btn" title="Sản phẩm yêu thích" aria-label="Danh sách yêu thích">
+            <i class="fa-solid fa-heart"></i>
+            <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+          </button>
+
+          <!-- Cart Toggle -->
+          <button class="action-btn cart-toggle-btn" title="Giỏ hàng" aria-label="Giỏ hàng">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge-count cart-count-badge" style="display: none;">0</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-accent"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-fire"></i> BỘ SƯU TẬP PERFORMANCE 2026
+          </div>
+          <h1 class="hero-title">
+            BỨT PHÁ GIỚI HẠN VẬN ĐỘNG CÙNG <span>PROSPORT</span>
+          </h1>
+          <p class="hero-desc">
+            Trang phục thể thao ứng dụng sợi dệt thông minh AirFlex 4D và công nghệ thoáng nhiệt tức thì. Giữ cơ thể luôn mát mẻ, tự tin dẫn đầu mọi cuộc đua và buổi tập.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#shop" class="btn btn-primary">
+              <i class="fa-solid fa-bag-shopping"></i> Mua sắm ngay
+            </a>
+            <a href="#size-calculator" class="btn btn-outline">
+              <i class="fa-solid fa-calculator"></i> Tính size chuẩn dáng
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>150K+</h4>
+              <p>Khách hàng tin chọn</p>
+            </div>
+            <div class="stat-item">
+              <h4>99.8%</h4>
+              <p>Đánh giá 5 sao</p>
+            </div>
+            <div class="stat-item">
+              <h4>30 Ngày</h4>
+              <p>Đổi trả miễn phí</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1000&q=80" alt="Vận động viên thể thao PROSPORT">
+          </div>
+          <div class="hero-badge-float">
+            <div class="badge-float-icon">
+              <i class="fa-solid fa-wind"></i>
+            </div>
+            <div class="badge-float-info">
+              <strong>Công Nghệ Dri-FIT 4D</strong>
+              <span>Bốc hơi mồ hôi trong 3 giây</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Features Bar -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="feature-info">
+            <h4>Giao Hàng Hỏa Tốc</h4>
+            <p>Nhận hàng trong 2H tại HN & TP.HCM</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="feature-info">
+            <h4>100% Chính Hãng</h4>
+            <p>Bảo hành chỉ may & khóa kéo 12 tháng</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </div>
+          <div class="feature-info">
+            <h4>Đổi Trả Trong 30 Ngày</h4>
+            <p>Đổi size tận nơi hoàn toàn miễn phí</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="feature-info">
+            <h4>Tư Vấn Thể Thao 24/7</h4>
+            <p>Đội ngũ HLV tư vấn chọn đồ chuyên sâu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flash Sale Section with Countdown Timer -->
+  <section class="flash-sale-section" id="flash-sale">
+    <div class="container">
+      <div class="flash-sale-header">
+        <div class="flash-sale-title-group">
+          <h2 class="flash-sale-title">
+            <i class="fa-solid fa-bolt" style="color: var(--color-primary);"></i> FLASH SALE HÔM NAY
+          </h2>
+          <span class="flash-badge">Ưu đãi đến 50%</span>
+        </div>
+
+        <div class="countdown-timer">
+          <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; margin-right: 6px;">KẾT THÚC TRONG:</span>
+          <div class="timer-box">
+            <div class="timer-value" id="timer-hours">08</div>
+            <div class="timer-label">Giờ</div>
+          </div>
+          <span class="timer-colon">:</span>
+          <div class="timer-box">
+            <div class="timer-value" id="timer-minutes">45</div>
+            <div class="timer-label">Phút</div>
+          </div>
+          <span class="timer-colon">:</span>
+          <div class="timer-box">
+            <div class="timer-value" id="timer-seconds">30</div>
+            <div class="timer-label">Giây</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flash-products-scroll" id="flash-sale-products">
+        <!-- Dynamic flash sale cards injected by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Navigation Pills -->
+  <section class="categories-bar-section">
+    <div class="container">
+      <div class="category-pills" id="category-pills-container">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Shop Catalog Section -->
+  <section class="shop-section" id="shop">
+    <div class="container">
+      <div class="shop-layout">
+        
+        <!-- Sidebar Filters -->
+        <aside class="filters-sidebar">
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Môn Thể Thao</span>
+              <i class="fa-solid fa-medal" style="color: var(--color-primary)"></i>
+            </div>
+            <div class="filter-options">
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="all" checked onchange="App.setCategory('all')">
+                <span>Tất cả các môn</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="football" onchange="App.setCategory('football')">
+                <span>Bóng Đá</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="running" onchange="App.setCategory('running')">
+                <span>Chạy Bộ (Running)</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="gym" onchange="App.setCategory('gym')">
+                <span>Gym & Thể Hình</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="tennis" onchange="App.setCategory('tennis')">
+                <span>Cầu Lông & Tennis</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="basketball" onchange="App.setCategory('basketball')">
+                <span>Bóng Rổ</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="yoga" onchange="App.setCategory('yoga')">
+                <span>Yoga & Pilates</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="cat-filter" value="accessories" onchange="App.setCategory('accessories')">
+                <span>Phụ Kiện Thể Thao</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Gender Filter -->
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Giới Tính</span>
+              <i class="fa-solid fa-venus-mars"></i>
+            </div>
+            <div class="filter-options">
+              <label class="filter-radio-label">
+                <input type="radio" name="gender-filter" value="all" checked>
+                <span>Tất cả</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="gender-filter" value="men">
+                <span>Nam</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="gender-filter" value="women">
+                <span>Nữ</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Khoảng Giá</span>
+              <i class="fa-solid fa-tags"></i>
+            </div>
+            <div class="filter-options">
+              <label class="filter-radio-label">
+                <input type="radio" name="price-filter" value="all" checked>
+                <span>Tất cả mức giá</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="price-filter" value="under-300">
+                <span>Dưới 300.000₫</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="price-filter" value="300-500">
+                <span>300.000₫ - 500.000₫</span>
+              </label>
+              <label class="filter-radio-label">
+                <input type="radio" name="price-filter" value="above-500">
+                <span>Trên 500.000₫</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Size Filter Buttons -->
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Kích Cỡ (Size)</span>
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div class="size-filter-grid">
+              <button class="size-filter-btn" data-size="S">S</button>
+              <button class="size-filter-btn" data-size="M">M</button>
+              <button class="size-filter-btn" data-size="L">L</button>
+              <button class="size-filter-btn" data-size="XL">XL</button>
+              <button class="size-filter-btn" data-size="XXL">XXL</button>
+            </div>
+          </div>
+
+          <button class="btn-reset-filters" onclick="App.resetFilters()">
+            <i class="fa-solid fa-arrows-rotate"></i> Xóa tất cả bộ lọc
+          </button>
+        </aside>
+
+        <!-- Shop Content -->
+        <main class="shop-content">
+          <div class="shop-content-header">
+            <div class="results-count" id="products-count">
+              Đang tải danh sách sản phẩm...
+            </div>
+
+            <div class="sort-wrapper">
+              <label for="sort-products-select"><i class="fa-solid fa-arrow-down-short-wide"></i> Sắp xếp:</label>
+              <select id="sort-products-select" class="sort-select">
+                <option value="popular">Phổ biến nhất</option>
+                <option value="bestseller">Bán chạy nhất</option>
+                <option value="rating">Đánh giá cao nhất</option>
+                <option value="price-asc">Giá: Thấp đến Cao</option>
+                <option value="price-desc">Giá: Cao đến Thấp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid" id="products-grid">
+            <!-- Dynamic cards injected by app.js -->
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fabric & Sports Innovation Showcase -->
+  <section class="tech-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CÔNG NGHỆ VẢI ĐỘT PHÁ</span>
+        <h2 class="section-title">Nền Tảng Cho Mọi Kỷ Lục Thể Thao</h2>
+        <p class="section-desc">
+          Mỗi đường kim mũi chỉ và sợi dệt tại PROSPORT đều được nghiên cứu trong phòng thí nghiệm động lực học nhằm tối ưu hóa từng động tác của vận động viên.
+        </p>
+      </div>
+
+      <div class="tech-cards-grid">
+        <div class="tech-card">
+          <div class="tech-card-icon">
+            <i class="fa-solid fa-wind"></i>
+          </div>
+          <h3>AirFlex Micro-Mesh</h3>
+          <p>Cấu trúc dệt tổ ong vi mô hàng triệu lỗ thoát hơi, giúp hạ nhiệt độ cơ thể nhanh hơn 2.5 độ C so với vải cotton truyền thống.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-icon">
+            <i class="fa-solid fa-arrows-up-down-left-right"></i>
+          </div>
+          <h3>4-Way HyperStretch</h3>
+          <p>Pha sợi Spandex cao cấp co giãn 4 chiều linh hoạt 300%, đàn hồi bền bỉ không bai xệ và khôi phục form dáng ngay lập tức.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-icon">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3>Silver-Ion Anti-Odor</h3>
+          <p>Phủ tinh thể ion bạc kháng khuẩn 99.9%, ngăn ngừa hoàn toàn vi khuẩn sinh mùi mồ hôi dù tập luyện liên tục suốt cả ngày.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-icon">
+            <i class="fa-solid fa-droplet-slash"></i>
+          </div>
+          <h3>HydroShield DWR</h3>
+          <p>Lớp phủ sinh học siêu mỏng kháng nước mưa nhẹ và chống bám bẩn bùn đất trên các cung đường chạy trail hay sân cỏ ướt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sports Size Guide Calculator Tool -->
+  <section class="size-calculator-section" id="size-calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CÔNG CỤ THÔNG MINH</span>
+        <h2 class="section-title">Gợi Ý Size Chuẩn Dáng Thể Thao</h2>
+        <p class="section-desc">
+          Nhập chiều cao và cân nặng của bạn, hệ thống AI của PROSPORT sẽ tính toán kích cỡ hoàn hảo nhất cho form người thể thao.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-grid">
+          <div class="calc-form">
+            <div class="calc-form-group">
+              <label for="calc-height"><i class="fa-solid fa-arrows-up-down"></i> Chiều cao của bạn:</label>
+              <div class="calc-input-wrapper">
+                <input type="number" id="calc-height" value="172" min="140" max="210">
+                <span class="calc-input-unit">cm</span>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label for="calc-weight"><i class="fa-solid fa-weight-scale"></i> Cân nặng của bạn:</label>
+              <div class="calc-input-wrapper">
+                <input type="number" id="calc-weight" value="68" min="35" max="130">
+                <span class="calc-input-unit">kg</span>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label for="calc-fit"><i class="fa-solid fa-person"></i> Sở thích mặc:</label>
+              <select id="calc-fit" class="form-group" style="width: 100%; padding: 12px 16px;">
+                <option value="standard">Vừa vặn thoải mái (Standard Fit)</option>
+                <option value="tight">Ôm sát cơ bắp (Muscle Fit / Slim)</option>
+                <option value="loose">Rộng rãi thoải mái (Relaxed / Loose)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <div style="font-size: 0.9rem; text-transform: uppercase; font-weight: 800; color: var(--text-dim);">
+              KÍCH THƯỚC ĐỀ XUẤT CHO BẠN
+            </div>
+            <div class="calc-result-size" id="calc-output-size">L</div>
+            <div class="calc-result-text" id="calc-output-advice">
+              Vừa vặn thoải mái cho luyện tập thể thao.
+            </div>
+            <button class="btn btn-primary" onclick="App.openSizeGuideModal()" style="margin-top: 18px; font-size: 0.85rem; padding: 10px 20px;">
+              <i class="fa-solid fa-table"></i> Xem bảng thông số chi tiết
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews & Testimonials -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ĐÁNH GIÁ TỪ VẬN ĐỘNG VIÊN</span>
+        <h2 class="section-title">Được Tin Chọn Bởi Hơn 150.000 Vận Động Viên</h2>
+        <p class="section-desc">Cảm nhận thực tế từ các chân chạy marathon, cầu thủ phong trào và huấn luyện viên thể hình.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Chất vải Dri-FIT trên áo Pro Match đá bóng cực thích, đá 90 phút dưới trời nắng gắt mà áo không hề bết dính vào người, mồ hôi khô rất nhanh. Đã mua thêm 2 chiếc tặng đồng đội!"
+          </p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Nguyễn Tuấn Anh" class="reviewer-avatar">
+            <div>
+              <div class="reviewer-name">Nguyễn Tuấn Anh</div>
+              <div class="reviewer-sport">Cầu thủ phong trào / Runner</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Set đồ yoga seamless màu hồng đất tôn da cực kỳ, quần cạp cao siết eo mà không hề tức bụng khi hít thở sâu. Vải dày dặn không bị lộ viền nội y khi squat. 10 điểm cho chất lượng!"
+          </p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Trần Thảo Ly" class="reviewer-avatar">
+            <div>
+              <div class="reviewer-name">Trần Thảo Ly</div>
+              <div class="reviewer-sport">HLV Yoga & Pilates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Quần short 2 lớp chạy bộ cắt laser có ngăn để điện thoại ở đùi trong chạy 21km không rung lắc một chút nào. Túi sau đựng vừa 3 gói gel năng lượng. Rất đáng tiền!"
+          </p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Hoàng Minh Quân" class="reviewer-avatar">
+            <div>
+              <div class="reviewer-name">Hoàng Minh Quân</div>
+              <div class="reviewer-sport">Finisher VnExpress Marathon 42km</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer" id="showroom">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+            <span class="logo-text">PROSPORT</span>
+          </a>
+          <p>
+            Thương hiệu thời trang & phụ kiện thể thao hiệu năng cao hàng đầu Việt Nam. Đồng hành cùng hàng triệu vận động viên trên mọi chặng đường rèn luyện.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-btn" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Môn Thể Thao</h4>
+          <ul class="footer-links">
+            <li><a href="#shop" onclick="App.setCategory('football')">Áo Đấu & Quần Bóng Đá</a></li>
+            <li><a href="#shop" onclick="App.setCategory('running')">Trang Phục Chạy Marathon</a></li>
+            <li><a href="#shop" onclick="App.setCategory('gym')">Quần Áo Gym & Thể Hình</a></li>
+            <li><a href="#shop" onclick="App.setCategory('tennis')">Polo Tennis & Cầu Lông</a></li>
+            <li><a href="#shop" onclick="App.setCategory('yoga')">Đồ Tập Yoga & Pilates Nữ</a></li>
+            <li><a href="#shop" onclick="App.setCategory('accessories')">Bình Nước & Phụ Kiện</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Chăm Sóc Khách Hàng</h4>
+          <ul class="footer-links">
+            <li><a href="#size-calculator">Hướng Dẫn Chọn Size Chuẩn</a></li>
+            <li><a href="#">Chính Sách Đổi Trả 30 Ngày</a></li>
+            <li><a href="#">Chính Sách Bảo Hành Đường May</a></li>
+            <li><a href="#">Tra Cứu Đơn Hàng Nhanh</a></li>
+            <li><a href="#">Hệ Thống 12 Showroom Toàn Quốc</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Đăng Ký Nhận Khuyến Mãi</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">
+            Nhận ngay voucher giảm giá <strong>15% (SPORT2026)</strong> và cập nhật bộ sưu tập mới sớm nhất.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Nhập địa chỉ email của bạn..." required>
+            <button type="submit" class="btn btn-primary" style="padding: 10px 18px;">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PROSPORT VIETNAM. Bản quyền thuộc về Hệ thống Thể thao PROSPORT.
+        </div>
+        <div class="payment-methods-icons">
+          <i class="fa-solid fa-qrcode" title="VietQR"></i>
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="MasterCard"></i>
+          <i class="fa-solid fa-money-bill-wave" title="COD"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & SLIDE-OVER DRAWERS
+       ========================================================================== -->
+
+  <!-- Drawer Backdrop Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Shopping Cart Drawer -->
+  <aside class="drawer" id="cart-drawer" aria-label="Giỏ hàng">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <i class="fa-solid fa-cart-shopping" style="color: var(--color-primary)"></i>
+        <span>Giỏ Hàng Của Bạn</span>
+      </div>
+      <button class="btn-close-modal" onclick="App.closeDrawer('cart-drawer')" aria-label="Đóng giỏ hàng">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Free Shipping Meter -->
+      <div class="shipping-meter-box">
+        <div class="shipping-meter-text" id="shipping-meter-text">
+          Đang tính phí vận chuyển...
+        </div>
+        <div class="meter-track">
+          <div class="meter-fill" id="shipping-meter-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Items List -->
+      <div class="drawer-items-list" id="cart-items-list">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <!-- Coupon input -->
+      <div class="coupon-form-group">
+        <input type="text" id="cart-coupon-input" class="coupon-input" placeholder="Mã giảm giá (VD: SPORT2026)">
+        <button class="btn btn-outline" onclick="App.applyCouponCode()" style="padding: 8px 16px; font-size: 0.85rem;">
+          Áp dụng
+        </button>
+      </div>
+
+      <!-- Totals Summary & Checkout CTA -->
+      <div id="cart-summary-box">
+        <!-- Injected by app.js -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist Drawer -->
+  <aside class="drawer" id="wishlist-drawer" aria-label="Danh sách yêu thích">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <i class="fa-solid fa-heart" style="color: var(--color-accent)"></i>
+        <span>Sản Phẩm Yêu Thích</span>
+      </div>
+      <button class="btn-close-modal" onclick="App.closeDrawer('wishlist-drawer')" aria-label="Đóng yêu thích">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-items-list" id="wishlist-items-list">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- Product Detail & Quick View Modal -->
+  <div class="modal-overlay" id="product-detail-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="btn-close-modal" onclick="App.closeModal('product-detail-modal')" aria-label="Đóng modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="product-modal-container">
+        <!-- Dynamic content injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div class="modal-overlay" id="size-guide-modal" role="dialog" aria-modal="true">
+    <div class="modal-content" style="max-width: 650px; padding: 32px;">
+      <button class="btn-close-modal" onclick="App.closeModal('size-guide-modal')" aria-label="Đóng">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+        <i class="fa-solid fa-ruler-combined" style="color: var(--color-primary)"></i> Bảng Hướng Dẫn Chọn Size Chuẩn
+      </h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+        Áp dụng cho các sản phẩm trang phục thể thao nam/nữ của PROSPORT. Nếu số đo của bạn nằm giữa 2 size, nên chọn size lớn hơn để vận động thoải mái.
+      </p>
+      <div id="size-guide-table-container">
+        <!-- Injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true">
+    <div class="modal-content checkout-modal-content">
+      <button class="btn-close-modal" onclick="App.closeModal('checkout-modal')" aria-label="Đóng checkout">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <form onsubmit="App.submitCheckout(event)">
+        <div class="checkout-grid">
+          <div>
+            <h3 class="checkout-section-title">
+              <i class="fa-solid fa-truck" style="color: var(--color-primary)"></i> Thông Tin Nhận Hàng
+            </h3>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkout-name">Họ và tên người nhận *</label>
+                <input type="text" id="checkout-name" placeholder="Nguyễn Văn A" required>
+              </div>
+              <div class="form-group">
+                <label for="checkout-phone">Số điện thoại *</label>
+                <input type="tel" id="checkout-phone" placeholder="0912 345 678" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkout-city">Tỉnh / Thành phố *</label>
+                <select id="checkout-city" required>
+                  <option value="Hà Nội">Hà Nội</option>
+                  <option value="TP. Hồ Chí Minh" selected>TP. Hồ Chí Minh</option>
+                  <option value="Đà Nẵng">Đà Nẵng</option>
+                  <option value="Hải Phòng">Hải Phòng</option>
+                  <option value="Cần Thơ">Cần Thơ</option>
+                  <option value="Khác">Tỉnh thành khác</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="checkout-district">Quận / Huyện *</label>
+                <input type="text" id="checkout-district" placeholder="Quận 1 / Cầu Giấy..." required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-address">Địa chỉ cụ thể (Số nhà, ngõ, tên đường) *</label>
+              <input type="text" id="checkout-address" placeholder="123 Đường Nguyễn Huệ, Phường Bến Nghé" required>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-notes">Ghi chú giao hàng (Tùy chọn)</label>
+              <input type="text" id="checkout-notes" placeholder="Giao giờ hành chính, gọi trước khi giao...">
+            </div>
+
+            <!-- Payment Methods -->
+            <h3 class="checkout-section-title" style="margin-top: 24px;">
+              <i class="fa-solid fa-credit-card" style="color: var(--color-primary)"></i> Phương Thức Thanh Toán
+            </h3>
+
+            <div class="payment-options-list">
+              <label class="payment-option-card">
+                <input type="radio" name="payment_method" value="cod" checked>
+                <div>
+                  <strong>Thanh toán khi nhận hàng (COD)</strong>
+                  <div style="font-size: 0.8rem; color: var(--text-muted)">Kiểm tra hàng trước khi thanh toán tiền mặt</div>
+                </div>
+              </label>
+
+              <label class="payment-option-card">
+                <input type="radio" name="payment_method" value="vietqr">
+                <div>
+                  <strong>Chuyển khoản VietQR 24/7 (Quét mã miễn phí)</strong>
+                  <div style="font-size: 0.8rem; color: var(--text-muted)">Quét mã QR qua mọi ứng dụng ngân hàng hoặc ví điện tử</div>
+                </div>
+              </label>
+
+              <label class="payment-option-card">
+                <input type="radio" name="payment_method" value="momo">
+                <div>
+                  <strong>Ví điện tử MoMo / ZaloPay</strong>
+                  <div style="font-size: 0.8rem; color: var(--text-muted)">Thanh toán liền mạch, an toàn</div>
+                </div>
+              </label>
+            </div>
+
+            <!-- VietQR Container Preview -->
+            <div class="qr-box-preview" id="vietqr-box">
+              <!-- Rendered if VietQR selected -->
+            </div>
+          </div>
+
+          <!-- Checkout Order Summary -->
+          <div style="background: var(--bg-surface-elevated); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; flex-direction: column;">
+            <h4 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 16px;">Đơn Hàng Của Bạn</h4>
+            
+            <div id="checkout-order-summary" style="flex: 1;">
+              <!-- Injected by app.js -->
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
+              <i class="fa-solid fa-shield-check"></i> Xác Nhận Đặt Hàng
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Success Modal -->
+  <div class="modal-overlay" id="order-success-modal" role="dialog" aria-modal="true">
+    <div class="modal-content order-success-content">
+      <div class="success-icon-box">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 8px;">ĐẶT HÀNG THÀNH CÔNG!</h3>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">
+        Cảm ơn bạn đã lựa chọn PROSPORT. Chuyên viên chăm sóc khách hàng sẽ liên hệ xác nhận đơn hàng trong vòng 15 phút.
+      </p>
+
+      <div id="success-order-details">
+        <!-- Injected by app.js -->
+      </div>
+
+      <button class="btn btn-primary" onclick="App.closeModal('order-success-modal')" style="width: 100%;">
+        <i class="fa-solid fa-arrow-left"></i> Tiếp Tục Mua Sắm
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <a href="#" class="mobile-nav-item active">
+      <i class="fa-solid fa-house"></i>
+      <span>Trang chủ</span>
+    </a>
+    <a href="#shop" class="mobile-nav-item" onclick="App.setCategory('all')">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Sản phẩm</span>
+    </a>
+    <a href="javascript:void(0)" class="mobile-nav-item wishlist-toggle-btn">
+      <i class="fa-solid fa-heart"></i>
+      <span>Yêu thích</span>
+      <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+    </a>
+    <a href="javascript:void(0)" class="mobile-nav-item cart-toggle-btn">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Giỏ hàng</span>
+      <span class="badge-count cart-count-badge" style="display: none;">0</span>
+    </a>
+  </nav>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
